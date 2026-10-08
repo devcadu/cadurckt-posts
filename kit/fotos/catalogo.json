@@ -1,5 +1,5 @@
 {
- "avatar.jpg": "Rosto do Carlos recortado. Usar só como foto de perfil no modelo tweet.",
+ "avatar.jpg": "Rosto do Carlos sorrindo, fundo cinza de estúdio (da foto estudio_cinza_sorrindo). Usar como foto de perfil no modelo tweet.",
  "palco_microfone.jpg": "Carlos sozinho no palco, falando no microfone, fundo escuro. Melhor foto para capa da revista e para o slide dividido. Rosto no terço de cima (foco 'center 15%').",
  "estudio_dupla_preto.jpg": "Foto de estúdio, Carlos sentado de camiseta preta (tatuagem no braço) com uma mulher de blazer preto em pé atrás. Boa para fechamento/autoridade. Rosto do Carlos à esquerda (foco 'center 20%').",
  "inicio_quarto_selfie.jpg": "Foto antiga do começo: selfie num quarto de parede verde com computador. Usar para 'onde tudo começou' / jornada.",
@@ -9,5 +9,8 @@
  "premio_lider_trofeu.jpg": "Prêmio Líder: Carlos segurando certificado, com homem de terno e mulher com troféu. Conquista/premiação.",
  "selfie_espelho_dupla.jpg": "Selfie no espelho, Carlos de terno claro com mulher de vestido vinho, em casa. Bastidor pessoal.",
  "abraco_dupla.jpg": "Carlos de terno claro abraçando mulher de vestido vinho. Bastidor pessoal.",
- "selfie_evento_dupla.jpg": "Selfie de baixo para cima em evento, Carlos e uma mulher. Bastidor/evento."
+ "selfie_evento_dupla.jpg": "Selfie de baixo para cima em evento, Carlos e uma mulher. Bastidor/evento.",
+ "estudio_cortina_branca.jpg": "Estúdio: Carlos sozinho de camiseta branca, olhando para o lado, cortina clara e estante com planta. Tom sério/reflexivo. Boa para capa da revista, slide de reflexão e fechamento. Rosto no terço de cima (foco \"center 25%\").",
+ "estudio_cinza_sorrindo.jpg": "Estúdio: Carlos sozinho de camiseta preta, agachado, sorrindo de frente, fundo cinza liso. Tom acessível/confiante. Ótima para capa, CTA e slide final. Rosto no terço de cima (foco \"center 20%\").",
+ "estudio_cinza_perfil.jpg": "Estúdio: Carlos de lado, camiseta preta, sorrindo para a câmera, mãos juntas, fundo cinza liso. Espaço livre à esquerda para texto. Boa para capa com título e slide de virada (foco \"60% 20%\")."
 }

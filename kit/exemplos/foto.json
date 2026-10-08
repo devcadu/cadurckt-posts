@@ -1,0 +1,26 @@
+{
+ "tipo": "foto",
+ "nome": "foto",
+ "slides": [
+  {
+   "imagem": "fotos/palco_microfone.jpg",
+   "dividido": true,
+   "foco": "center 22%",
+   "texto": "1 mês ruim.",
+   "texto2": "Você ainda tem 11."
+  },
+  {
+   "imagem": "fotos/inicio_quarto_selfie.jpg",
+   "texto": "Começou num quarto\ncom um computador."
+  },
+  {
+   "imagem": "fotos/time_evento_crachas.jpg",
+   "texto": "Depois virou time."
+  },
+  {
+   "imagem": "fotos/estudio_dupla_preto.jpg",
+   "foco": "center 20%",
+   "texto": "Nada disso foi sorte.\n[[Foi constância.]]"
+  }
+ ]
+}

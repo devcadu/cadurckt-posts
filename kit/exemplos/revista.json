@@ -1,0 +1,27 @@
+{
+ "tipo": "revista",
+ "nome": "revista",
+ "slides": [
+  {
+   "layout": "capa",
+   "imagem": "fotos/palco_microfone.jpg",
+   "foco": "center 15%",
+   "chamada": "sua agência não tem um problema de",
+   "titulo": "[[vendas]]",
+   "subtitulo": "tem um problema de processo"
+  },
+  {
+   "titulo": "Cada vendedor\n[[vende do seu jeito]]",
+   "texto": "E ninguém sabe por que um mês fecha o dobro do outro."
+  },
+  {
+   "titulo": "Sem processo,\nresultado é [[sorte]]",
+   "texto": "Quando o vendedor bom sai, o faturamento sai junto.",
+   "imagem": "fotos/time_evento_crachas.jpg"
+  },
+  {
+   "titulo": "Comenta\n[[processo]]",
+   "texto": "Que eu te chamo no direct."
+  }
+ ]
+}

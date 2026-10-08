@@ -1,0 +1,17 @@
+{
+ "tipo": "tweet",
+ "nome": "tweet",
+ "avatar": "fotos/avatar.jpg",
+ "slides": [
+  {
+   "texto": "A maioria das agências não quebra por falta de cliente. Quebra porque [[todo mês começa do zero.]]",
+   "imagem": "fotos/time_evento_crachas.jpg"
+  },
+  {
+   "texto": "Projeto é receita que acaba.\n\n[[MRR é receita que se repete todo mês.]]"
+  },
+  {
+   "texto": "Comenta [[MRR]] que eu te chamo no direct."
+  }
+ ]
+}

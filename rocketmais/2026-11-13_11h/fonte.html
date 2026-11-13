@@ -1,0 +1,167 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+/* componentes desta peça: telas de Status em HTML */
+.phone{background:#0d0d0d;border:2px solid rgba(255,255,255,.14);border-radius:34px;padding:26px 28px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.light .phone{background:#fff;border-color:rgba(0,0,0,.08);box-shadow:0 20px 50px rgba(0,0,0,.08)}
+.ph-h{font-family:Barlow;font-weight:700;text-transform:uppercase;font-size:30px;letter-spacing:.04em;color:rgba(255,255,255,.55);margin-bottom:14px}
+.light .ph-h{color:rgba(0,0,0,.45)}
+.st{display:flex;align-items:center;gap:22px;padding:14px 0;border-top:1px solid rgba(255,255,255,.08)}
+.light .st{border-top-color:rgba(0,0,0,.07)}
+.st:first-of-type{border-top:0}
+.ring{flex:none;width:74px;height:74px;border-radius:50%;padding:5px;background:conic-gradient(var(--or) 0 100%)}
+.ring.off{background:rgba(255,255,255,.18)}
+.light .ring.off{background:rgba(0,0,0,.12)}
+.ring>b{display:block;width:100%;height:100%;border-radius:50%;border:4px solid #0d0d0d;background:linear-gradient(135deg,#3a3a3a,#1a1a1a)}
+.light .ring>b{border-color:#fff;background:linear-gradient(135deg,#d9d6cf,#bdb9b0)}
+.st .n{font-family:InterW;font-weight:700;font-size:32px;color:#fff}
+.light .st .n{color:#0a0a0a}
+.st .t{font-family:InterW;font-weight:500;font-size:24px;color:rgba(255,255,255,.5);margin-top:2px}
+.light .st .t{color:rgba(0,0,0,.45)}
+.bub{font-family:InterW;font-size:30px;line-height:1.35;padding:20px 26px;border-radius:22px;max-width:86%;position:relative}
+.bub.me{background:#1f3b2c;color:#fff;margin-left:auto;border-top-right-radius:6px}
+.light .bub.me{background:#dcf6c8;color:#0a0a0a}
+.bub.cl{background:#222;color:#fff;border-top-left-radius:6px}
+.light .bub.cl{background:#f1efea;color:#0a0a0a}
+.bub small{display:block;text-align:right;font-size:18px;opacity:.5;margin-top:6px}
+.fix{display:flex;gap:24px;align-items:flex-start;border-radius:24px;padding:30px 34px}
+.fix i{flex:none;width:58px;height:58px;border-radius:16px;background:var(--or);display:flex;align-items:center;justify-content:center;font-style:normal;color:#fff;font-family:Anton;font-size:32px}
+.fix span{font-family:InterW;font-weight:600;font-size:34px;line-height:1.3}
+.fix.dk{background:#0a0a0a;color:#fff}
+.fix.bx{border:2px solid rgba(253,82,2,.55);background:linear-gradient(135deg,rgba(253,82,2,.12),rgba(253,82,2,.02));color:#fff}
+.enum{display:flex;gap:30px;align-items:flex-end}
+.enum .num{font-size:250px}
+.story{position:relative;border-radius:26px;overflow:hidden;height:470px;background:linear-gradient(160deg,#2a2a2a,#111)}
+.story .bar{position:absolute;left:18px;right:18px;top:16px;height:6px;border-radius:3px;background:rgba(255,255,255,.3)}
+.story .bar:after{content:"";position:absolute;left:0;top:0;bottom:0;width:60%;background:#fff;border-radius:3px}
+.story .lab{position:absolute;left:0;right:0;top:-2px;text-align:center}
+.prod{position:absolute;left:50%;top:150px;transform:translateX(-50%);width:200px;height:200px;border-radius:30px;background:linear-gradient(145deg,#4a4a4a,#262626);box-shadow:inset 0 0 0 3px rgba(255,255,255,.06)}
+.prod:after{content:"";position:absolute;inset:44px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#6a6a6a,#2b2b2b)}
+.price{position:absolute;left:22px;right:22px;bottom:22px;background:var(--or);color:#fff;border-radius:16px;padding:14px 18px;font-family:Barlow;font-weight:700;font-size:30px;text-transform:uppercase;line-height:1.15;text-align:center}
+.vs{font-family:Barlow;font-weight:700;text-transform:uppercase;font-size:32px;letter-spacing:.06em;margin-bottom:14px}
+.mix{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.mix div{border-radius:22px;padding:20px 26px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.mix b{display:block;font-family:Anton;font-size:52px;color:var(--or);line-height:1}
+.mix span{display:block;font-family:Barlow;font-weight:700;text-transform:uppercase;font-size:38px;color:#0a0a0a;line-height:1.1;margin-top:8px}
+.mix em{display:block;font-style:normal;font-family:InterW;font-size:24px;color:rgba(0,0,0,.55);margin-top:6px;line-height:1.3}
+</style></head><body>
+
+<!-- 01 CAPA -->
+<section class="v2">
+  <div class="fill" style="background-image:url(banco/palco_microfone.jpg);background-position:50% 12%;filter:grayscale(1) brightness(.6) contrast(1.1)"></div>
+  <div class="shade"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="tag or">Raio-X</div></div>
+  <div class="body" style="bottom:170px;text-align:center">
+    <div class="sub m" style="font-size:42px;letter-spacing:.06em">O Status do seu WhatsApp é uma vitrine</div>
+    <div class="t1" style="font-size:250px;margin:10px 0 0;line-height:.95;text-shadow:0 10px 40px rgba(0,0,0,.6)">4 erros</div>
+    <div class="t1" style="font-size:88px;margin-top:10px">que deixam essa vitrine<br><span class="acc">apagada.</span></div>
+    <div style="display:flex;justify-content:center;margin-top:44px"><div class="swipe">arraste para o lado <b></b></div></div>
+  </div>
+</section>
+
+<!-- 02 ERRO 1: posta quando lembra -->
+<section class="v2">
+  <div class="lines"></div><div class="vig"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  <div class="body" style="top:180px;z-index:3">
+    <div class="enum"><div class="num">01</div><div class="t1" style="font-size:84px;padding-bottom:22px">Postar só<br>quando <span class="acc">lembra</span></div></div>
+    <div class="phone" style="margin-top:34px">
+      <div class="ph-h">Status · atualizações recentes</div>
+      <div class="st"><div class="ring"><b></b></div><div><div class="n">Seu concorrente</div><div class="t">há 12 minutos</div></div></div>
+      <div class="st"><div class="ring"><b></b></div><div><div class="n">Loja do bairro</div><div class="t">há 1 hora</div></div></div>
+      <div class="st"><div class="ring off"><b></b></div><div><div class="n" style="color:rgba(255,255,255,.45)">Sua empresa</div><div class="t">nada nas últimas 24 horas</div></div></div>
+    </div>
+    <p class="sup" style="margin-top:34px;font-size:36px">O Status <b>some em 24 horas.</b> Se você não posta, a vitrine fica fechada e o cliente vê a do concorrente.</p>
+    <div class="fix bx" style="margin-top:28px"><i>✓</i><span>Defina horários fixos: manhã, almoço e fim da tarde.</span></div>
+  </div>
+  <div class="src" style="bottom:56px">Fonte: WhatsApp (página oficial do Status)</div>
+</section>
+
+<!-- 03 ERRO 2: cliente não salvou o número -->
+<section class="light">
+  <div class="grid"></div>
+  <div class="top"><div class="logo dk"><img src="img/logo_bk.png" style="height:38px;display:block"></div><div class="tag dk">03 / 07</div></div>
+  <div class="body" style="top:200px">
+    <div class="enum"><div class="num">02</div><div class="t1" style="font-size:84px;color:#0a0a0a;padding-bottom:22px">O cliente não<br><span class="acc">salvou seu número</span></div></div>
+    <p class="sup" style="margin-top:34px;font-size:36px">Seu Status só aparece para quem tem o seu número <b>salvo na agenda.</b> Sem isso, você posta para ninguém.</p>
+    <div class="phone" style="margin-top:30px;display:grid;gap:16px">
+      <div class="bub cl">Fechado, pode separar pra mim!<small>10:14</small></div>
+      <div class="bub me">Separado! 🙌 Salva nosso número aqui: toda semana tem novidade e oferta no Status.<small>10:15 ✓✓</small></div>
+    </div>
+    <div class="fix dk" style="margin-top:26px"><i>✓</i><span>Deixe essa frase pronta nas respostas rápidas e mande em toda venda.</span></div>
+  </div>
+  <div class="src" style="bottom:56px">Fonte: MacMagazine e Oficina da Net</div>
+</section>
+
+<!-- 04 ERRO 3: foto sem preço e sem próximo passo -->
+<section class="v2">
+  <div class="lines"></div><div class="vig"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="dots"><i></i><i></i><i class="on"></i><i></i><i></i><i></i></div></div>
+  <div class="body" style="top:180px;z-index:3">
+    <div class="enum"><div class="num">03</div><div class="t1" style="font-size:84px;padding-bottom:22px">Foto bonita,<br><span class="acc">sem pedido</span></div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:36px">
+      <div>
+        <div class="vs" style="color:rgba(255,255,255,.55)">✕ Assim</div>
+        <div class="story" style="filter:grayscale(1);opacity:.75"><div class="bar"></div><div class="prod"></div>
+          <div class="price" style="background:#333">Chegou novidade 😍</div></div>
+      </div>
+      <div>
+        <div class="vs acc">✓ Assim</div>
+        <div class="story" style="border:2px solid rgba(253,82,2,.6)"><div class="bar"></div><div class="prod"></div>
+          <div class="price">Preço na tela<br><span style="font-size:24px">Responde "EU QUERO"</span></div></div>
+      </div>
+    </div>
+    <p class="sup" style="margin-top:34px;font-size:36px">O cliente vê, gosta e passa. Ninguém disse <b>quanto custa</b> nem <b>o que fazer agora.</b></p>
+    <div class="fix bx" style="margin-top:26px"><i>✓</i><span>Todo Status de produto: foto + preço (ou “a&nbsp;partir&nbsp;de”) + 1&nbsp;chamada.</span></div>
+  </div>
+</section>
+
+<!-- 05 ERRO 4: só oferta -->
+<section class="light">
+  <div class="grid"></div>
+  <div class="top"><div class="logo dk"><img src="img/logo_bk.png" style="height:38px;display:block"></div><div class="tag dk">05 / 07</div></div>
+  <div class="body" style="top:170px">
+    <div class="enum"><div class="num">04</div><div class="t1" style="font-size:84px;color:#0a0a0a;padding-bottom:22px">Só oferta,<br>todo dia</div></div>
+    <p class="sup" style="margin-top:26px;font-size:34px">Status que só empurra promoção vira <b>panfleto:</b> o cliente aprende a pular. Misture motivos para ele parar e olhar.</p>
+    <div class="mix" style="margin-top:26px">
+      <div><b>1</b><span>Bastidor</span><em>o time preparando, a loja abrindo</em></div>
+      <div><b>2</b><span>Dúvida respondida</span><em>a pergunta que mais chega no chat</em></div>
+      <div><b>3</b><span>Cliente feliz</span><em>com autorização dele</em></div>
+      <div><b>4</b><span>Oferta</span><em>com prazo e motivo claro</em></div>
+    </div>
+    <div class="fix dk" style="margin-top:26px"><i>✓</i><span>Regra simples: para cada oferta, 2 ou 3 Status que não pedem nada.</span></div>
+  </div>
+  <div class="bot dk"><span class="m">Raio-X</span><span class="pill blk">Arraste →</span></div>
+</section>
+
+<!-- 06 CHECKLIST -->
+<section class="v2">
+  <div class="lines"></div><div class="vig"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="tag or">Checklist</div></div>
+  <div class="body" style="top:200px;z-index:3">
+    <div class="t1" style="font-size:96px">Status que vende<br><span class="acc">antes da Black Friday</span></div>
+    <div class="list" style="margin-top:50px">
+      <div class="chk"><i>✓</i><span>Horários fixos de postagem, todo dia</span></div>
+      <div class="chk"><i>✓</i><span>"Salva nosso número" em toda venda</span></div>
+      <div class="chk"><i>✓</i><span>Produto com preço e 1 chamada clara</span></div>
+      <div class="chk"><i>✓</i><span>Bastidor, dúvida, cliente e oferta</span></div>
+      <div class="chk"><i>✓</i><span>Alguém do time responde quem reagir</span></div>
+    </div>
+    <div class="box" style="margin-top:20px"><div class="k">Faça hoje</div><div class="v">Poste 1 Status antes do almoço e mande "salva nosso número" para os clientes da semana.</div></div>
+  </div>
+  <div class="bot"><span class="m">Raio-X</span><span class="pill or">Salva esse post ↗</span></div>
+</section>
+
+<!-- 07 CTA -->
+<section class="v2">
+  <div class="ctaph" style="background-image:url(img/carlos_escritorio.jpg);background-position:50% 15%"></div>
+  <div class="vig"></div><div class="glow" style="opacity:.9;bottom:-300px"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="tag">07 / 07</div></div>
+  <div class="body" style="top:300px;z-index:3">
+    <div class="t1" style="font-size:104px">Quer um WhatsApp<br>que vende até<br><span class="acc">no Status?</span></div>
+    <div class="sub m" style="margin-top:56px;font-size:44px">Comenta a palavra</div>
+    <div class="kw" style="margin-top:16px">VENDER</div>
+    <div class="sub m" style="margin-top:36px;font-size:36px">e eu te chamo no direct. Ou clique em <span style="color:#fff">Enviar mensagem.</span></div>
+  </div>
+  <div class="bot"><span class="m">Rocket+ · São Luís</span><span class="m">+150 empresas atendidas</span></div>
+</section>
+</body></html>

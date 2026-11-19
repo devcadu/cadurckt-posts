@@ -1,0 +1,163 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+.pn{background:#141414;border:2px solid rgba(255,255,255,.12);border-radius:26px;padding:30px 34px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.pn .h{display:flex;justify-content:space-between;align-items:center;font-family:Barlow;font-weight:600;text-transform:uppercase;font-size:28px;color:rgba(255,255,255,.6);letter-spacing:.06em}
+.chip{font-family:Barlow;font-weight:600;font-size:34px;text-transform:uppercase;padding:14px 22px;border-radius:16px;background:#1d1d1d;border:1.5px solid rgba(255,255,255,.14);color:#fff;text-align:center}
+.chip.on{border-color:var(--or);background:rgba(253,82,2,.14)}
+.met{background:#0d0d0d;border-radius:18px;padding:22px 24px;border:1.5px solid rgba(255,255,255,.1)}
+.met .l{font-family:Barlow;font-weight:600;text-transform:uppercase;font-size:26px;color:rgba(255,255,255,.55)}
+.met .n{font-family:Anton;font-size:68px;line-height:1.05;color:#fff}
+.ilu{font-family:Barlow;font-weight:600;font-size:22px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.light .ilu{color:rgba(0,0,0,.4)}
+.bar{height:16px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden}.bar i{display:block;height:100%;background:var(--or)}
+.fix{display:flex;gap:24px;align-items:flex-start}
+.fix i{flex:none;width:58px;height:58px;border-radius:14px;background:var(--or);color:#fff;font-style:normal;font-family:Anton;font-size:34px;display:flex;align-items:center;justify-content:center}
+</style></head><body>
+
+<!-- 01 CAPA -->
+<section class="v2">
+  <div class="lines"></div><div class="vig"></div>
+  <div style="position:absolute;left:80px;right:80px;top:170px;z-index:2;transform:rotate(-3deg);opacity:.9">
+    <div class="pn">
+      <div class="h"><span>Campanha · Performance Max</span><span style="color:var(--or)">● Ativa</span></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px">
+        <div class="chip on">Pesquisa</div><div class="chip on">YouTube</div><div class="chip on">Maps</div>
+        <div class="chip on">Gmail</div><div class="chip on">Discover</div><div class="chip on">Display</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px">
+        <div class="met"><div class="l">Gasto</div><div class="n">R$ 3.000</div></div>
+        <div class="met"><div class="l">Vendas medidas</div><div class="n" style="color:var(--or)">???</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="shade" style="z-index:2;background:linear-gradient(180deg,rgba(7,7,7,0) 0%,rgba(7,7,7,.1) 30%,rgba(7,7,7,.88) 52%,#070707 64%)"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="tag or">Raio-X · ADS</div></div>
+  <div class="body" style="bottom:150px;text-align:center;z-index:3">
+    <div class="sub m" style="font-size:40px;letter-spacing:.04em">A campanha do Google que aparece em tudo</div>
+    <div class="t1" style="font-size:128px;margin:14px 0 10px;white-space:nowrap">Performance Max</div>
+    <div class="t1" style="font-size:80px">3 erros que deixam<br><span class="acc">o Google decidir sozinho</span></div>
+    <div style="display:flex;justify-content:center;margin-top:40px"><div class="swipe">arraste para o lado <b></b></div></div>
+  </div>
+  <div class="ilu" style="position:absolute;right:80px;top:140px;z-index:4">Painel ilustrativo</div>
+</section>
+
+<!-- 02 O QUE É -->
+<section class="light">
+  <div class="grid"></div>
+  <div class="top"><div class="logo dk"><img src="img/logo_bk.png" style="height:38px;display:block"></div><div class="tag dk">02 / 07</div></div>
+  <div class="body" style="top:220px">
+    <div class="t1" style="font-size:112px;color:#0a0a0a">1 campanha.<br><span class="hl">6 vitrines.</span></div>
+    <p class="sup" style="margin-top:36px">Na Performance Max você não escolhe onde aparece. O Google leva o anúncio para <b>todo o inventário dele</b>:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px">
+      <div class="chip" style="background:#0a0a0a">Pesquisa</div><div class="chip" style="background:#0a0a0a">YouTube</div>
+      <div class="chip" style="background:#0a0a0a">Maps</div><div class="chip" style="background:#0a0a0a">Gmail</div>
+      <div class="chip" style="background:#0a0a0a">Discover</div><div class="chip" style="background:#0a0a0a">Display</div>
+    </div>
+    <div style="margin-top:40px;background:#0a0a0a;color:#fff;border-radius:22px;padding:30px 34px"><span class="sub" style="font-size:44px">Mais alcance. E mais decisão <span class="acc">na mão do Google.</span></span></div>
+  </div>
+  <div class="src" style="bottom:140px">Fonte: Ajuda do Google Ads (Sobre as campanhas Performance Max)</div>
+  <div class="bot dk"><span class="m">Raio-X</span><span class="pill blk">Arraste →</span></div>
+</section>
+
+<!-- 03 ERRO 1 -->
+<section class="v2">
+  <div class="lines"></div><div class="vig"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="dots"><i></i><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
+  <div class="body" style="top:190px;z-index:3">
+    <div style="display:flex;gap:34px;align-items:flex-end">
+      <div class="num" style="font-size:260px">01</div>
+      <div class="t1" style="font-size:84px;padding-bottom:14px">Ligar sem<br><span class="acc">medir a venda</span></div>
+    </div>
+    <div class="pn" style="margin-top:34px">
+      <div class="h"><span>Últimos 30 dias</span><span class="ilu">Ilustrativo</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:18px">
+        <div class="met"><div class="l">Cliques</div><div class="n">1.240</div></div>
+        <div class="met"><div class="l">Conversões</div><div class="n" style="color:var(--or)">0</div></div>
+        <div class="met"><div class="l">Gasto</div><div class="n" style="white-space:nowrap">R$ 3.000</div></div>
+      </div>
+    </div>
+    <p class="sup" style="margin-top:34px">A Performance Max otimiza pela meta de conversão. Sem medir, <b>ela aprende com o clique, não com a venda.</b></p>
+  </div>
+  <div class="box" style="position:absolute;left:80px;right:80px;bottom:130px;z-index:3">
+    <div class="k">A correção</div>
+    <div class="v">Acompanhamento de conversões ligado antes: lead, ligação, WhatsApp ou compra de verdade.</div>
+  </div>
+  <div class="src" style="bottom:66px">Fonte: Ajuda do Google Ads</div>
+</section>
+
+<!-- 04 ERRO 2 -->
+<section class="light">
+  <div class="grid"></div>
+  <div class="top"><div class="logo dk"><img src="img/logo_bk.png" style="height:38px;display:block"></div><div class="tag dk">04 / 07</div></div>
+  <div class="body" style="top:200px">
+    <div style="display:flex;gap:34px;align-items:flex-end">
+      <div class="num" style="font-size:260px">02</div>
+      <div class="t1" style="font-size:84px;padding-bottom:14px;color:#0a0a0a">O clique cai<br><span class="hl">na página errada</span></div>
+    </div>
+    <p class="sup" style="margin-top:30px">A <b>expansão de URL final</b> vem ligada: o Google pode trocar a página do anúncio por outra do seu site.</p>
+    <div style="margin-top:34px;display:grid;gap:16px">
+      <div style="display:flex;align-items:center;gap:22px;background:#fff;border-radius:20px;padding:22px 28px;box-shadow:0 10px 30px rgba(0,0,0,.06)"><span class="t1" style="font-size:46px;color:#1a8a3a">✓</span><span class="sub" style="color:#0a0a0a;font-size:42px;text-transform:none">seusite.com.br/orcamento</span></div>
+      <div style="display:flex;align-items:center;gap:22px;background:#fff;border-radius:20px;padding:22px 28px;box-shadow:0 10px 30px rgba(0,0,0,.06)"><span class="t1" style="font-size:46px;color:var(--or)">✕</span><span class="sub" style="color:#0a0a0a;font-size:42px;text-transform:none;text-decoration:line-through;text-decoration-color:var(--or);text-decoration-thickness:4px">seusite.com.br/trabalhe-conosco</span></div>
+      <div style="display:flex;align-items:center;gap:22px;background:#fff;border-radius:20px;padding:22px 28px;box-shadow:0 10px 30px rgba(0,0,0,.06)"><span class="t1" style="font-size:46px;color:var(--or)">✕</span><span class="sub" style="color:#0a0a0a;font-size:42px;text-transform:none;text-decoration:line-through;text-decoration-color:var(--or);text-decoration-thickness:4px">seusite.com.br/blog/2019</span></div>
+    </div>
+    <div style="margin-top:30px;background:#0a0a0a;color:#fff;border-radius:22px;padding:28px 32px"><span class="sub" style="font-size:40px">Correção: <span class="acc">exclusões de URL</span> nas páginas que não vendem.</span></div>
+  </div>
+  <div class="src" style="bottom:140px">Exemplos ilustrativos · Fonte: Ajuda do Google Ads (Expansão de URL final)</div>
+  <div class="bot dk"><span class="m">Raio-X</span><span class="pill blk">Arraste →</span></div>
+</section>
+
+<!-- 05 ERRO 3 -->
+<section class="v2">
+  <div class="lines"></div><div class="vig"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="dots"><i></i><i></i><i></i><i class="on"></i><i></i><i></i></div></div>
+  <div class="body" style="top:190px;z-index:3">
+    <div style="display:flex;gap:34px;align-items:flex-end">
+      <div class="num" style="font-size:260px">03</div>
+      <div class="t1" style="font-size:84px;padding-bottom:14px">Não subir<br><span class="acc">o seu vídeo</span></div>
+    </div>
+    <div style="display:flex;gap:34px;margin-top:34px;align-items:center">
+      <div style="flex:none;width:300px;height:470px;border-radius:36px;border:8px solid #222;background:linear-gradient(160deg,#2a2a2a,#111);position:relative;box-shadow:0 30px 70px rgba(0,0,0,.6)">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:110px;height:110px;border-radius:50%;background:rgba(253,82,2,.9);display:flex;align-items:center;justify-content:center;font-size:52px;color:#fff;padding-left:10px">▶</div></div>
+        <div style="position:absolute;left:18px;right:18px;bottom:20px" class="ilu">Vídeo automático</div>
+      </div>
+      <p class="sup" style="font-size:38px">Sem vídeo seu, o Google pode <b>montar um automaticamente</b> com as suas imagens e textos. Aí quem apresenta a sua empresa no YouTube <b>é a máquina, não você.</b></p>
+    </div>
+  </div>
+  <div class="box" style="position:absolute;left:80px;right:80px;bottom:130px;z-index:3">
+    <div class="k">A correção</div>
+    <div class="v">Suba pelo menos um vídeo seu. Celular, boa luz e a oferta nos primeiros segundos já resolvem.</div>
+  </div>
+  <div class="src" style="bottom:66px">Fonte: Ajuda do Google Ads</div>
+</section>
+
+<!-- 06 CHECKLIST -->
+<section class="v2">
+  <div class="lines"></div><div class="vig"></div>
+  <div class="frame" style="position:absolute;right:80px;top:180px;width:220px;height:240px;z-index:3;background-image:url(img/abraco_carlos.jpg);background-position:20% 40%;filter:brightness(.85) contrast(1.05)"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="tag or">Checklist</div></div>
+  <div class="body" style="top:200px;z-index:3">
+    <div class="t1" style="font-size:88px">Antes<br>de ligar a<br><span class="acc">Performance Max</span></div>
+    <div style="margin-top:56px">
+      <div class="chk"><i>✓</i><span>Conversão medida: lead, ligação ou venda</span></div>
+      <div class="chk"><i>✓</i><span>Páginas que não vendem fora com exclusão de URL</span></div>
+      <div class="chk"><i>✓</i><span>Um vídeo seu no grupo de recursos</span></div>
+      <div class="chk"><i>✓</i><span>Sinais de público com a sua lista de clientes: é pista, não cerca</span></div>
+    </div>
+  </div>
+  <div class="bot"><span class="m">Raio-X</span><span class="pill or">Salva esse post ↗</span></div>
+</section>
+
+<!-- 07 CTA -->
+<section class="v2">
+  <div class="ctaph" style="background-image:url(img/avatar.jpg);background-position:50% 20%"></div>
+  <div class="vig"></div><div class="glow" style="opacity:.9;bottom:-300px"></div>
+  <div class="top"><div class="logo"><img src="img/logo_wh.png" style="height:38px;display:block"></div><div class="tag">07 / 07</div></div>
+  <div class="body" style="top:300px;z-index:3">
+    <div class="t1" style="font-size:104px">Quer o Google<br>trabalhando<br><span class="acc">pra sua venda?</span></div>
+    <div class="sub m" style="margin-top:56px;font-size:44px">Comenta a palavra</div>
+    <div class="kw" style="margin-top:16px">ADS</div>
+    <div class="sub m" style="margin-top:36px;font-size:36px">e eu te chamo no direct. Ou clique em <span style="color:#fff">Enviar mensagem.</span></div>
+  </div>
+  <div class="bot"><span class="m">Rocket+ · São Luís</span><span class="m">+150 empresas atendidas</span></div>
+</section>
+</body></html>
